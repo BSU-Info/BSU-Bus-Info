@@ -1,35 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BSU Bus Info</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BSU Bus Info</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    padding:30px;
+    text-align:center;
+    background:linear-gradient(135deg,#007BFF,#00c6ff);
+    min-height:100vh;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+h1{
+    color:white;
+    font-size:48px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.creator{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.subtitle{
+    color:white;
+    font-size:18px;
+    margin:20px 0 35px;
+}
+
+.card{
+    display:block;
+    background:white;
+    color:black;
+    text-decoration:none;
+    padding:25px;
+    margin:18px auto;
+    border-radius:20px;
+    max-width:500px;
+    font-size:24px;
+    font-weight:bold;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.3);
+}
+
+.card p{
+    margin:8px;
+    font-size:16px;
+    font-weight:normal;
+    color:#555;
+}
+
+.footer{
+    margin-top:40px;
+    color:white;
+    font-size:18px;
+}
+
+button{
+    background:white;
+    color:#007BFF;
+    border:none;
+    padding:15px 35px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#eeeeee;
+}
+
+</style>
+
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; background: #f5f5f5;">
 
-    <h1>🚌 BSU Bus Info</h1>
+<body>
 
-    <h3>Created by walix2</h3>
+<div class="container">
 
-    <p>
-        Welcome to BSU Bus Info, a fan-made website dedicated to
-        Bus Simulator: Ultimate.
-    </p>
+<h1>🚌 BSU Bus Info</h1>
 
-    <h2>What you'll find here:</h2>
+<div class="creator">
+Created by walix2
+</div>
 
-    <p><a href="bus-list.html">🚌 Bus List</a></p>
-    <p><a href="bus-prices.html">💰 Bus Prices</a></p>
-    <p>⚡ Top Speed (🚧 Future Update — Collection of accurate speed data is currently in progress.)</p>
-    <p><a href="passenger-capacity.html">👥 Passenger Capacity</a></p>
-    <p><a href="guides-tips.html" style="color: blue; text-decoration: underline;">📖 Guides & Tips</a></p>
-    <p><a href="latest-updates.html">📰 Latest Updates</a></p>
+<div class="subtitle">
+Your Ultimate Bus Simulator: Ultimate Database
+</div>
 
-    <br>
 
-    <button onclick="alert('More features coming soon!')">
-        Explore
-    </button>
+<a href="bus-list.html" class="card">
+🚌 Bus List
+<p>Explore all buses available in BSU.</p>
+</a>
+
+
+<a href="bus-prices.html" class="card">
+💰 Bus Prices
+<p>Check showroom prices and coin costs.</p>
+</a>
+
+
+<a href="passenger-capacity.html" class="card">
+👥 Passenger Capacity
+<p>View buses ranked by passenger capacity.</p>
+</a>
+
+
+<a href="guides-tips.html" class="card">
+📖 Guides & Tips
+<p>Helpful tips to progress faster.</p>
+</a>
+
+
+<a href="latest-updates.html" class="card">
+📰 Latest Updates
+<p>Check BSU version history and updates.</p>
+</a>
+
+
+<br>
+
+<button onclick="alert('More features coming soon!')">
+🚍 Explore
+</button>
+
+
+<div class="footer">
+🚧 More features coming soon...
+</div>
+
+</div>
 
 </body>
 </html>
